@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/emailvariftET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email Address Not Varified"
+        android:textColor="#000"
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        android:layout_margin="15dp"
+        android:textStyle="bold"
+        />
+    <Button
+        android:id="@+id/varifybtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Varify"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Main Activity"
+        android:textColor="#000"
+        android:textAllCaps="true"
+        android:textSize="30sp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+         />
+    <Button
+        android:onClick="logoutbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Log Out"
+        android:textSize="30sp"/>
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@android:color/holo_purple"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textAllCaps="true"
+        android:textColor="#000"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="20dp"
+        android:text="Create Account"/>
+
+    <EditText
+        android:id="@+id/nameET"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Enter Name"
+        android:inputType="text"
+        android:background="@android:color/white"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/emailET"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Enter Email Address"
+        android:inputType="textEmailAddress"
+        android:background="@android:color/white"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/passwordET"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:background="@android:color/white"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/confpasswordET"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:background="@android:color/white"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:textSize="20sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/signupbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="SignUp"
+            android:textAllCaps="true"
+            android:textSize="20sp" />
+        <ProgressBar
+            android:id="@+id/loadingbar"
+            android:visibility="gone"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

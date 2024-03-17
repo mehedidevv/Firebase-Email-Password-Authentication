@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#00BCD4"
+    android:gravity="center"
+    tools:context=".LoginActivity">
+
+   <EditText
+       android:id="@+id/logmailEt"
+       android:layout_width="match_parent"
+       android:layout_height="70dp"
+       android:hint="Enter Email Address"
+       android:background="@android:color/white"
+       android:layout_margin="10dp"
+       android:padding="5dp"
+       android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/logpassword"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="Enter Password"
+        android:background="@android:color/white"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:textSize="20sp"/>
+    <TextView
+        android:onClick="forgetPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forget_password_click_here"
+        android:textSize="20sp"
+        android:layout_marginLeft="50dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/logbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="log in"
+            android:textAllCaps="true"
+            android:textSize="20sp" />
+        <ProgressBar
+            android:id="@+id/loadingbar"
+            android:visibility="gone"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/registerbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textAllCaps="true"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"/>
+</LinearLayout>
